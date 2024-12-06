@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" conaent="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Défilement d'image</title>
+  <link rel="stylesheet" href="../Site/CSS/styles.css">
 </head>
 <body>
-    
+  <div id="image-container">
+    <img id="image" src="../Site/Image/Design sans titre.png" alt="Large Image">
+    <button id="scroll-btn">↑</button>
+    <div id="overlay" onclick="hideInfoBox()"></div>
+
+  <!-- Image cliquable -->
+  <div class="clickable-image" onclick="showInfoBox(event, 'Voici le cerveau, il coordone les organes du corps. Il est comparable aux coraux.')">
+    <img src="../Site/Image/cerveau-removebg-preview.png" alt="Cerveau">
+  </div>
+  <div class="clickable-image intestin" onclick="showInfoBox(event, 'Voici les intestins, ils permettent d`eliminer la nourriture. Il est comparable aux organismes de décompositions.')">
+    <img src="../Site/Image/intestind-removebg-preview.png" alt="Intestin">
+  </div>
+  <div class="clickable-image poumons" onclick="showInfoBox(event, 'Voici les poumons, ils permettent de respirer. Il est comparable aux algues dans l`eau.')">
+    <img src="../Site/Image/poumons-removebg-preview.png" alt="poumons">
+  </div>
+  
+
+  <!-- Boîte d'informations -->
+  <div id="info-box"></div>
+  <script src="script.js"></script>
+  </div>
 </body>
 </html>

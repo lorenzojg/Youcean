@@ -1,0 +1,95 @@
+/* Styles de base */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000; /* Optionnel pour un meilleur contraste */
+}
+
+/* Conteneur de l'image */
+#image-container {
+  position: relative;
+  width: 100%;
+  /* max-width: 10000px;  Ajustez en fonction du design souhaité */
+  height: 100%; /* Le conteneur occupe toute la hauteur de l'écran */
+  overflow: hidden; /* Cache les parties hors du conteneur */
+  
+}
+
+/* Image */
+#image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  transition: top 1s ease-in-out; /* Transition fluide pour le défilement */
+}
+
+/* Bouton pour scroller */
+#scroll-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; /* Coins arrondis */
+  font-size: 16px;
+}
+
+/* Conteneur de l'image cliquable */
+.clickable-image {
+  position: fixed; /* L'image reste fixée à sa position */
+  top: 20px; /* Ajustez la position verticale */
+  left: 20px; /* Ajustez la position horizontale */
+  cursor: pointer;
+}
+.intestin {
+  position: fixed; /* L'image reste fixée à sa position */
+  top: 20px; /* Ajustez la position verticale */
+  left: 200px; /* Ajustez la position horizontale */
+  cursor: pointer;
+}
+
+.poumons {
+  position: fixed; /* L'image reste fixée à sa position */
+  top: 20px; /* Ajustez la position verticale */
+  left: 400px; /* Ajustez la position horizontale */
+  cursor: pointer;
+}
+
+.clickable-image img {
+  max-width: 150px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+#info-box {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1000;
+  max-width: 300px;
+  word-wrap: break-word;
+  font-size: 16px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 999;
+}
