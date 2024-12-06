@@ -99,7 +99,7 @@ git merge develop-<votre_prenom>
 ### 5. **Créer une Pull Request**
 
 - On ne fais pas de Pull Request directement sur la branche `main`.
-- La PR doit être faites après avoir récupéré les dernières modifications de la branche `main` et fixer les conflits.
+- La PR doit être faites après avoir récupéré les dernières modifications de la branche `main`, `develop` et fixer les conflits.
 
 - Une fois vos modifications terminées, créez une Pull Request de votre branche `develop-<votre_prenom>` vers `develop`.
 
