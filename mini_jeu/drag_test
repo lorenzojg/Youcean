@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css_drag.css">
+  <script src="java_drag.js"></script>
+</head>
+<body>
+ <style>
+ 
+  body {
+  padding:50px;
+  background-image: url("img9.webp");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  }
+
+  h1 {
+  text-align:center;
+  font-weight:bold;
+  padding-bottom:2em;
+  }
+
+ </style>
+
+<h1> Associe les éléments océaniques avec les éléments du corps humains correspondant !</h1>
+
+<div class="game-container">
+  <div class="draggable-container">
+    <div class="draggable-column">
+      <div id="draggable-1" class="draggable" draggable="true" ondragstart="onDragStart(event);">Courants Océaniques</div>
+      <div id="draggable-2" class="draggable" draggable="true" ondragstart="onDragStart(event);">Phytoplanctons</div>
+      <div id="draggable-3" class="draggable" draggable="true" ondragstart="onDragStart(event);">Organismes Décomposeurs</div>
+      <div id="draggable-4" class="draggable" draggable="true" ondragstart="onDragStart(event);">Micro-organismes</div>
+    </div>
+
+    <div class="draggable-column">
+      <div id="draggable-5" class="draggable" draggable="true" ondragstart="onDragStart(event);">Coraux</div>
+      <div id="draggable-6" class="draggable" draggable="true" ondragstart="onDragStart(event);">Eponge</div>
+      <div id="draggable-7" class="draggable" draggable="true" ondragstart="onDragStart(event);">Vie Océaniques</div>
+      <div id="draggable-8" class="draggable" draggable="true" ondragstart="onDragStart(event);">Circulation Océanique</div>
+    </div>
+  </div>
+
+  <div class="dropzone-container">
+    <div class="dropzone-column">
+      <div id="dropzone-1" class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);">Cœur</div>
+      <div id="dropzone-2" class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);">Poumons</div>
+      <div id="dropzone-3" class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);">Estomac</div>
+      <div id="dropzone-4" class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);">rein</div>
+    </div>
+
+    <div class="dropzone-column">
+      <div id="dropzone-5" class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);">Cerveau</div>
+      <div id="dropzone-6" class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);">Système Immunitaire</div>
+      <div id="dropzone-7" class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);">Microbiote</div>
+      <div id="dropzone-8" class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);">Circulation du Sang</div>
+    </div>
+  </div> 
+</div>
+
+</body>
