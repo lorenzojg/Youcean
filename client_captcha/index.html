@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tcha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <h1>🌊 Accès à l'ocean 🌊</h1>
+        <p>Faites glisser les déchets vers la poubelle et la vie marine vers la zone sécurisée. Placez 5 éléments
+            correctement pour continuer, mais
+            ne faites pas plus de 3 erreurs!</p>
+        <div id="lives">
+            ❤️ ❤️ ❤️
+        </div>
+        <div id="game-board">
+            <div id="trash-bin" class="drop-zone">🗑️ Poubelle</div>
+            <div id="safe-zone" class="drop-zone">🏝️ Zone sécurisée</div>
+        </div>
+        <div id="items-container">
+            <!-- Items will be generated dynamically here -->
+        </div>
+        <div id="result" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
