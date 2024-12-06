@@ -2,13 +2,13 @@
 
 ## **Cloner le dépôt**
 
-1. **Cloner le dépôt principal** :
+- **Cloner le dépôt principal** :
 
 ```bash
 git clone git@github.com:LoloWork/Youcean.git
 ```
 
-2. **Ouvrir le projet dans VS Code** :
+- **Ouvrir le projet dans VS Code** :
 
 ```bash
 code ./Youcean
@@ -72,13 +72,20 @@ git merge develop-<votre_prenom>
 
 ### 5. **Toujours mettre à jour vos branches parentes**
 
+Avant de travailler sur votre branche ou de créer une Pull Request, assurez-vous que vos branches sont à jour avec la branche `main` et la branche `develop` :
+
 ```bash
+# Mettre à jour la branche main
 git checkout main
 git fetch origin
 git pull origin main
+
+# Mettre à jour la branche develop
 git checkout develop
 git fetch origin
 git pull origin develop
+
+# Mettre à jour votre branche de travail
 git checkout develop-<votre_prenom>
 git merge origin/main
 ```
@@ -109,55 +116,74 @@ git branch <nom_branche>
 ```
   
 - **Changer de branche** :
+
   ```bash
   git checkout <nom_branche>
   ```
+  
 - **Supprimer une branche locale** :
-  ```bash
-  git branch -d <nom_branche>
-  ```
+
+```bash
+git branch -d <nom_branche>
+```
+  
 - **Supprimer une branche distante** :
-  ```bash
-  git push origin --delete <nom_branche>
-  ```
+
+```bash
+git push origin --delete <nom_branche>
+```
 
 ### **Commits**
+
 - **Créer un commit** :
-  ```bash
-  git commit -m "<message_commit>"
-  ```
+
+```bash
+git commit -m "<message_commit>"
+```
+
 - **Supprimer le dernier commit** (local uniquement) :
-  ```bash
-  git reset --hard HEAD~1
-  ```
+
+```bash
+git reset --hard HEAD~1
+```
 
 ### **Push**
+
 - **Pousser vos modifications** :
-  ```bash
-  git push origin <nom_branche>
-  ```
+
+```bash
+git push origin <nom_branche>
+```
 
 ### **Pull**
+
 - **Récupérer les dernières modifications** :
-  ```bash
-  git pull origin <nom_branche>
-  ```
+
+```bash
+git pull origin <nom_branche>
+```
 
 ### **Fetch**
+
 - **Récupérer les informations des branches distantes** :
-  ```bash
-  git fetch origin
-  ```
+
+```bash
+git fetch origin
+```
 
 ### **Merge**
+
 - **Fusionner une branche locale dans la branche active** :
-  ```bash
-  git merge <nom_branche>
-  ```
+
+```bash
+git merge <nom_branche>
+```
+  
 - **Fusionner une branche distante** :
-  ```bash
-  git merge origin/<nom_branche>
-  ```
+
+```bash
+git merge origin/<nom_branche>
+```
 
 ---
 
@@ -167,5 +193,13 @@ git branch <nom_branche>
 2. **Pull régulièrement** pour rester à jour avec les modifications des autres.
 3. Avant de pousser, assurez-vous que votre code fonctionne (testez !).
 4. **Communiquez avec votre équipe** si vous rencontrez des conflits de merge.
+5. Un merge est toujours fait depuis la branche enfant vers la branche mère.
+
+- Exemple : `develop-<votre_prenom>-<nom_feature>` vers `develop-<votre_prenom>`
+
+```bash
+git checkout develop-<votre_prenom>-<nom_feature>
+git merge develop-<votre_prenom>
+```
 
 ---
