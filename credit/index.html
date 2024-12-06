@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crédits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Équipe</h1>
+        <div class="card-grid">
+            <!-- 14 cards -->
+            <div class="card" onclick="showDetails('JACCAUD--GODEFROY Lorenzo', 'BUT2 PA.Technologie de l_information', 'image1.jpg', 'https://github.com/LoloWork', 'https://www.linkedin.com/in/lorenzojg/')">
+                <img src="image1.jpg" alt="Photo 1">
+                <h2>JACCAUD--GODEFROY Lorenzo</h2>
+            </div>
+            <div class="card" onclick="showDetails('BENKHERFELLAH Ibrahim', 'BUT1 SD', 'image2.jpg', 'https://github.com/Darckens', 'https://www.linkedin.com/in/ibrahim-benkherfellah/')">
+                <img src="image2.jpg" alt="Photo 2">
+                <h2>BENKHERFELLAH Ibrahim</h2>
+            </div>
+            <div class="card" onclick="showDetails('Axel COULET', 'BUT1 SD', 'image3.jpg', 'https://github.com/Clexa013', 'https://www.linkedin.com/in/axel-coulet-3a6067216/')">
+                <img src="image3.jpg" alt="Photo 3">
+                <h2>Axel COULET</h2>
+            </div>
+            <div class="card" onclick="showDetails('DULAI Jorawar', 'BUT2 Info', 'image4.jpg', 'https://github.com/jorawardulai', 'https://www.linkedin.com/in/jorawar-singh-dulai/')">
+                <img src="image4.jpg" alt="Photo 4">
+                <h2>DULAI Jorawar</h2>
+            </div>
+            <div class="card" onclick="showDetails('LI Olivier', 'BUT2 Info', 'image5.jpg', 'https://github.com/liolivier', 'https://www.linkedin.com/in/olivier-li-7a43372b8/')">
+                <img src="image5.jpg" alt="Photo 5">
+                <h2>LI Olivier</h2>
+            </div>
+            <div class="card" onclick="showDetails('BELQASMI Rayan', 'BUT1 Info', 'image6.jpg', ' https://github.com/surjit', 'https://www.linkedin.com/in/rayan-b-242b0a327/')">
+                <img src="image6.jpg" alt="Photo 6">
+                <h2>BELQASMI Rayan</h2>
+            </div>
+            <div class="card" onclick="showDetails('AKRETCHE Iraihane', 'BUT1 Info', 'image7.jpg', 'https://github.com/iraihane', 'https://www.linkedin.com/in/iraihane-akretche-85822732b/')">
+                <img src="image7.jpg" alt="Photo 7">
+                <h2>AKRETCHE Iraihane</h2>
+            </div>
+            <div class="card" onclick="showDetails('LIN HUANG Christophe', 'BUT1 Info', 'image8.jpg', 'https://github.com/XingkOng1504', 'https://www.linkedin.com/in/christophe-lin-huang-6741b8253/')">
+                <img src="image8.jpg" alt="Photo 8">
+                <h2>
+                    LIN HUANG Christophe</h2>
+            </div>
+            <div class="card" onclick="showDetails('BOURG Solène', 'BUT1 Info', 'image9.jpg', 'https://github.com/solene0971', 'https://www.linkedin.com/in/sol%C3%A8ne-bourg-a91ab3329/')">
+                <img src="image9.jpg" alt="Photo 9">
+                <h2>BOURG Solène</h2>
+            </div>
+            <div class="card" onclick="showDetails('DA COSTA Antoine', 'BUT3 Info', 'image10.jpg', 'https://www.linkedin.com/in/antoine-dcgr/', 'https://www.linkedin.com/in/antoine-dcgr/')">
+                <img src="image10.jpg" alt="Photo 10">
+                <h2>DA COSTA Antoine</h2>
+            </div>
+            <div class="card" onclick="showDetails('DA COSTA SA Edmilson', 'BUT2 PA.Technologie de l_information', 'image11.jpg', 'https://github.com/Edmilson9')">
+                <img src="image11.jpg" alt="Photo 11">
+                <h2>DA COSTA SA Edmilson</h2>
+            </div>
+            <div class="card" onclick="showDetails('DIARRASSOUBA Yann', 'BUT2 PA.Technologie de l_information', 'image12.jpg', 'https://github.com/YannMKD')">
+                <img src="image12.jpg" alt="Photo 12">
+                <h2>
+                    DIARRASSOUBA Yann</h2>
+            </div>
+            <div class="card" onclick="showDetails('ESSAADOUNI Sidi', 'BUT 3 Info', 'image13.jpg', 'https://www.linkedin.com/in/sidi-essaadouni-96b7641b1/', 'https://github.com/sessaadouni')">
+                <img src="image13.jpg" alt="Photo 13">
+                <h2>
+                    ESSAADOUNI Sidi</h2>
+            </div>
+            <div class="card" onclick="showDetails('KACI Amar', 'BUT3 Info', 'image14.jpg', 'https://github.com/dystopiansociety', 'https://www.linkedin.com/in/amar-k-6619a81b7/')">
+                <img src="image14.jpg" alt="Photo 14">
+                <h2>
+                    KACI Amar</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="details-overlay" id="detailsOverlay">
+        <div class="details-content">
+            <img src="" alt="Photo détaillée" id="detailsImage">
+            <h2 id="detailsName"></h2>
+            <p id="detailsDescription"></p>
+            <div class="social-links">
+                <a href="#" target="_blank" id="githubLink">GitHub</a>
+                <a href="#" target="_blank" id="linkedinLink">LinkedIn</a>
+            </div>
+            <button onclick="closeDetails()">Fermer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
